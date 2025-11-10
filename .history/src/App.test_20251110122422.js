@@ -1,8 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import { handleInput } from './App.js'
 
-// Øvelse 1
-
 describe('handleInput', () => {
   it('adds 10 to numbers', () => {
     expect(handleInput(5)).toBe(15)
@@ -25,7 +23,6 @@ describe('handleInput', () => {
 })
 
 
-// Øvelse 2
 
 describe('handleInput', () => {
   let input // bruges til at gemme vores testdata
