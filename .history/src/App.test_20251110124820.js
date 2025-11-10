@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { handleInput, getMessage } from './App.js'
+import { handleInput } from './App.js'
 
 // Øvelse 1
 
