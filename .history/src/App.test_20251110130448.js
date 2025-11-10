@@ -74,7 +74,7 @@ describe('getMessage', () => {
 
 
   it('giver fejlbesked, når noget går galt', async () => {
-    await expect(getMessage(false)).rejects.toBe('Noget gik galt')
+    await expect(getMessage(false)).rejects.toBe('Noget gik galt'); 
   })
 })
 
