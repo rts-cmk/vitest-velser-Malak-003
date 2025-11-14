@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { handleInput, getMessage, checkAge } from './App.js'
+import { handleInput, getMessage } from './App.js'
 
 // Øvelse 1
 
@@ -88,7 +88,7 @@ describe('checkAge', () => {
   })
 
   it('kaster fejl hvis input ikke er et tal', () => {
-    expect(() => checkAge("tyve")).toThrow('Alder skal være et tal')
+    expect(() => checkAge("tyve").toThrow('Alder skal være et tal'))
   })
 
 })

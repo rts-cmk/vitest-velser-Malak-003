@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { handleInput, getMessage, checkAge } from './App.js'
+import { handleInput, getMessage } from './App.js'
 
 // Øvelse 1
 
@@ -76,21 +76,6 @@ describe('getMessage', () => {
   it('giver fejlbesked, når noget går galt', async () => {
     await expect(getMessage(false)).rejects.toBe('Noget gik galt')
   })
-})
-
-
-
-// Øvelse 4
-
-describe('checkAge', () => {
-  it('returnerer "Gyldig alder" for et gyldigt tal', () => {
-    expect(checkAge(20)).toBe('Gyldig alder')
-  })
-
-  it('kaster fejl hvis input ikke er et tal', () => {
-    expect(() => checkAge("tyve")).toThrow('Alder skal være et tal')
-  })
-
 })
 
 

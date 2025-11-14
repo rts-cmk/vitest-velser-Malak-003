@@ -15,20 +15,10 @@ export function handleInput(value) {
 
 
 //en funktion, der returnerer en Promise
-export async function getMessage(isGood) {
+export function getMessage(isGood) {
   if (isGood) {
-    return 'Alt gik godt' 
+    return Promise.resolve('Alt gik godt')
   } else {
-    throw 'Noget gik galt'
+    return Promise.reject('Noget gik galt')
   }
-}
-
-
-// Denne funktion kaster fejl ved ugyldigt input
-export function checkAge(age) {
-  if (typeof age !== 'number') {
-    throw new Error('Alder skal være et tal')
-  }
-
-  return 'Gyldig alder'
 }

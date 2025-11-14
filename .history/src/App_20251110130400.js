@@ -22,13 +22,3 @@ export async function getMessage(isGood) {
     throw 'Noget gik galt'
   }
 }
-
-
-// Denne funktion kaster fejl ved ugyldigt input
-export function checkAge(age) {
-  if (typeof age !== 'number') {
-    throw new Error('Alder skal være et tal')
-  }
-
-  return 'Gyldig alder'
-}

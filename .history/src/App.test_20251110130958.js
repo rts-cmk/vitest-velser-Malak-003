@@ -88,7 +88,7 @@ describe('checkAge', () => {
   })
 
   it('kaster fejl hvis input ikke er et tal', () => {
-    expect(() => checkAge("tyve")).toThrow('Alder skal være et tal')
+    expect(() => checkAge("tyve").toThrow('Alder skal være et tal'))
   })
 
 })
